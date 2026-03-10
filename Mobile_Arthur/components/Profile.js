@@ -4,7 +4,7 @@ export function Person(){
     return(
         <View>
             <Text>Meu componente Pessoa </Text>
-        </View>
+        </View> //não podem ser criadas views dentro de outras views 
     )
 }
 

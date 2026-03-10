@@ -1,28 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Profile from './components/Profile';
-import { Person } from './components/Profile';
-import { Arthur } from './components/Profile';
-
+import { StyleSheet, Text, View, Image } from 'react-native';
+import Login from './components/Login';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <Person/> */}
-      <Text>ELETRO LIXO</Text>
-      <Profile/>
-      <Arthur></Arthur>
-      <StatusBar style="auto" />
-    </View>
-  );
+   <Login/>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // flexDirection:  // coloca as frases uma do lado da outra 
-    backgroundColor: '#ff6803ff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
+//COMANDOS PARA ABRIR O ARQUIVO CORRETAMENTE NO VS CODE E APARECER O CELULAR
+
+//1- Abra o CMD 
+
+//2- Acesse o diretório da pasta pelo cmd, dessa forma: cd CAMINHO DA PASTA 
+//EX: cd C:\Users\Mariane Melo\Projeto
+
+//3- Abrir o projeto: 
+//npx expo start 
+
+//4- Escanear o qr code que irá aparecer no cmd com o aplicativo expo go no seu celular 
+
+//DEPOIS, ABRIR A ABA DE PESQUISA NO VS CODE E CLICAR EM -> Show and run comands -> Mobile preview: show
