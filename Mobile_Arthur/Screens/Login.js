@@ -1,11 +1,11 @@
 import { StyleSheet, TextInput, View, Image, Button, Text } from 'react-native';
 
-export default function Login() {
+export default function Login({navigation}) {
     return (
         <View style={styles.container}>
            
             <Image
-                source={require('../Sources/login.png')} //alterar aqui
+                source={require('../Sources/gremio.jpg')} //alterar aqui
                 style={styles.imagem}
             />
 
@@ -26,6 +26,12 @@ export default function Login() {
                 <Button
                     title="Fazer Login"
                     color='#000'
+                    onPress={() => navigation.navigate('Home Screen')}
+                />
+                  <Button
+                    title="Novas pessoas"
+                    color='#000'
+                    onPress={() => navigation.navigate('Pessoas Screen')}
                 />
             </View>
 
