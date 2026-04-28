@@ -3,6 +3,7 @@ import { StyleSheet, TextInput, View, Image, Button, Text } from 'react-native';
 export default function Login({navigation}) {
     return (
         <View style={styles.container}>
+          
            
             <Image
                 source={require('../Sources/gremio.jpg')} //alterar aqui
@@ -26,13 +27,20 @@ export default function Login({navigation}) {
                 <Button
                     title="Fazer Login"
                     color='#000'
-                    onPress={() => navigation.navigate('Home Screen')}
+                    onPress={() => navigation.navigate('Home')}
                 />
                   <Button
                     title="Novas pessoas"
                     color='#000'
-                    onPress={() => navigation.navigate('Pessoas Screen')}
+                    onPress={() => navigation.navigate('Pessoas')}
                 />
+
+                  <Button
+                    title="Exemplo Async"
+                    color='#000'
+                    onPress={() => navigation.navigate('Async')}
+                  />
+
             </View>
 
         </View>
