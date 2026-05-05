@@ -41,6 +41,12 @@ export default function Login({navigation}) {
                     onPress={() => navigation.navigate('Async')}
                   />
 
+                  <Button
+                    title="Produtos SQL"
+                    color='#000'
+                    onPress={() => navigation.navigate('Produtos')}
+                  />
+
             </View>
 
         </View>

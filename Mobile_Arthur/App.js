@@ -8,6 +8,7 @@ import Pessoas from './Screens/Pessoas';
 import Login from './Screens/Login';
 import Home from './Screens/Home';
 import Image from './components/Image';
+import Produtos from './Screens/Produtos_SQL';
 
 import Exemplo1AsyncStorage from "./Screens/Exemplo1AsyncStorage";
 
@@ -36,6 +37,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Home" component={TabNavigate}/>
         <Stack.Screen name="Async" component={Exemplo1AsyncStorage}/>
+        <Stack.Screen name="Produtos" component={Produtos}/>
 
       </Stack.Navigator>
 
